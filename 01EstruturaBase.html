@@ -30,17 +30,17 @@
         //condicionais simples
         var idade1 = 17;
 
-        if(idade1  >= 18){
+        /*if(idade1  >= 18){
             alert("Aprovado!");
         }else{
             alert("Reprovado!!!");
-        }
+        }*/
 
         //condicional aninhada
 
         var notaMedia = 8.5;
 
-        if(notaMedia == 10){
+        /*if(notaMedia == 10){
             alert("Parabens");
         }else if(notaMedia >=9){
             alert("Foi Otimo");
@@ -52,7 +52,7 @@
             alert("Recuperação");
         }else{
             alert("Reprovado");
-        }
+        }*/
 
 
 
@@ -61,11 +61,11 @@
         var media = 10;
         var faltas = 20;
 
-        if((media >= 7) && (faltas <= 15)){
+        /*if((media >= 7) && (faltas <= 15)){
             alert("Aprovado hehe");
         }else{
             alert("Reprovado hehe");
-        }
+        }*/
 
 
 
@@ -75,29 +75,29 @@
         var trabalho1 = 8;
         var trabalho2 = 5;
 
-        if((trabalho1 >= 7) || (trabalho2 >= 7)){
+        /*if((trabalho1 >= 7) || (trabalho2 >= 7)){
             alert("Aprovado no trabalho");
         }else{
             ("Reprovado no trabalho");
-        }
+        }*/
 
 
         //Operador logico não =  !   usada em logica booleana
 
         var trabalhooo = true;
 
-        if(     !    trabalhooo == true){
+        /*if(     !    trabalhooo == true){
             alert("Você trabalha");
         }else{
             alert("Você não trabalha");
-        }
+        }*/
 
 
         //Estrutura de escolha   switch/case
 
         var codigo = 1;
 
-        switch(codigo){
+        /*switch(codigo){
             case 1:
                 alert("pizza");
                 break;
@@ -109,17 +109,17 @@
                 break;
             default:
                 alert("codigo invalido");
-        }
+        }*/
 
 
         //laços de repetição  enquanto = while
 
         var i = 1; //i = indice
 
-        while(i <= 4){
+        /*while(i <= 4){
             alert("Oi " + i);
             i++; //i = i + 1
-        }
+        }*/
 
 
         
@@ -127,18 +127,18 @@
 
         var i1 = 1;
 
-        do {
+        /*do {
             alert(i1); //i1 = indice 1
             i1++;
         } while (i1 <= 4);
-
+        */
 
 
         //laço de repetição para = for
 
-        for(i2 = 1; i2 <= 3; i2++){
+        /*for(i2 = 1; i2 <= 3; i2++){
             alert("O indice vale: " + i2); //i2 = indice 2
-        }
+        }*/
 
 
 
@@ -146,11 +146,11 @@
 
         var cursos = ["HTML", "CSS", "JS"]
 
-        alert(cursos); // vai exibir todos valores na array de uma vez
+        /*alert(cursos); // vai exibir todos valores na array de uma vez
         alert(cursos[0]); // exibi apenas o HTML
         alert(cursos[1]); // exibi apenas o CSS
         alert(cursos[2]); // exibi apenas o JS
-        
+        */
 
 
         //arrays de objetos
@@ -161,16 +161,41 @@
             {nome: "JS", carga: 300, sala: 6}, //vetor 2
         ]
 
-        alert(cursos1[0].nome); //exibi HTML
+        /*alert(cursos1[0].nome); //exibi HTML
         alert(cursos1[0].nome + " " + cursos1[0].sala); //exibi HTML 4
         // a estrutura é cursos1[qual vetor 0,1,2]. nome do atributo .nome .carga .sala
         alert(cursos[2]); // ele só chamou JS, estranho
         alert(cursos[3]); //undefined
+        */
+
+        // funções = ações //
+
+        //funções de texto, contando caracteres
+
+        var palavra = "dhoy Rodrigues Alves 1234";
+
+        alert(palavra.length); //conta o cumprimento do texto incluido letras, numeros e espaços
 
 
 
+        //Deixando em letras maiusculas e minusculas
 
+        var palavra1 = "dhoy Rodrigues Alves 1234";
+        /*
+        alert(palavra1.toUpperCase()); //transforma em MAIUSCULAS
 
+        alert(palavra1.toLowerCase()); //transforma em minusculas
+        */
+        
+
+        //Localizar elementos no JavaScript
+
+        var nome2 = "Dhoy Rodrigues Alves 1234"
+        /*
+        alert(nome2.indexOf("e")); // retorna a posição da primeira letra "e"
+
+        alert(nome2.lastIndexOf("e")); //retorna a posição da ultima letra "e" 
+        */
 
 
     </script>
