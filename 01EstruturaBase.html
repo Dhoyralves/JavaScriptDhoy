@@ -54,6 +54,8 @@
             alert("Reprovado");
         }
 
+
+
         //Operador logico e = &&
 
         var media = 10;
@@ -62,15 +64,84 @@
         if((media >= 7) && (faltas <= 15)){
             alert("Aprovado hehe");
         }else{
-            alert("Reprovado");
+            alert("Reprovado hehe");
         }
+
+
+
 
         // Operador logico ou = || paipi
 
         var trabalho1 = 8;
         var trabalho2 = 5;
 
-        if(() || ())
+        if((trabalho1 >= 7) || (trabalho2 >= 7)){
+            alert("Aprovado no trabalho");
+        }else{
+            ("Reprovado no trabalho");
+        }
+
+
+        //Operador logico não =  !   usada em logica booleana
+
+        var trabalhooo = true;
+
+        if(     !    trabalhooo == true){
+            alert("Você trabalha");
+        }else{
+            alert("Você não trabalha");
+        }
+
+
+        //Estrutura de escolha   switch/case
+
+        var codigo = 1;
+
+        switch(codigo){
+            case 1:
+                alert("pizza");
+                break;
+            case 2:
+                alert("suco");
+                break;
+            case 3:
+                alert("macarrão");
+                break;
+            default:
+                alert("codigo invalido");
+        }
+
+
+        //laços de repetição  enquanto = while
+
+        var i = 1; //i = indice
+
+        while(i <= 4){
+            alert("Oi " + i);
+            i++; //i = i + 1
+        }
+
+
+        
+        //laço de repetição  faça, enquanto =  do, while
+
+        var i1 = 1;
+
+        do {
+            alert(i1); //i1 = indice 1
+            i1++;
+        } while (i1 <= 4);
+
+
+
+        //laço de repetição para = for
+
+        for(i2 = 1; i2 <= 3; i2++){
+            alert("O indice vale: " + i2); //i2 = indice 2
+        }
+
+
+
     </script>
 </head>
 <body>
