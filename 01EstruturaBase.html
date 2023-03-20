@@ -142,6 +142,37 @@
 
 
 
+        //Arrays = vetores = banco de dados temporarios
+
+        var cursos = ["HTML", "CSS", "JS"]
+
+        alert(cursos); // vai exibir todos valores na array de uma vez
+        alert(cursos[0]); // exibi apenas o HTML
+        alert(cursos[1]); // exibi apenas o CSS
+        alert(cursos[2]); // exibi apenas o JS
+        
+
+
+        //arrays de objetos
+
+        var cursos1 = [
+            {nome: "HTML", carga: 20, sala: 4}, //vetor 0
+            {nome: "CSS", carga: 10, sala: 5}, //vetor 1
+            {nome: "JS", carga: 300, sala: 6}, //vetor 2
+        ]
+
+        alert(cursos1[0].nome); //exibi HTML
+        alert(cursos1[0].nome + " " + cursos1[0].sala); //exibi HTML 4
+        // a estrutura é cursos1[qual vetor 0,1,2]. nome do atributo .nome .carga .sala
+        alert(cursos[2]); // ele só chamou JS, estranho
+        alert(cursos[3]); //undefined
+
+
+
+
+
+
+
     </script>
 </head>
 <body>
