@@ -318,6 +318,44 @@
 
 
 
+        
+
+        //Seletores de conteudo
+
+        //seletor HTML
+        //escolha  um numero dentro do [0,1 ou 2]
+        function acao () {
+            var text1 = document.getElementsByTagName("h2")[1];
+            alert(text1.innerHTML);
+        }
+        //0 para dhoy, 1 para rodrigues, 2 para alves
+
+
+
+        //seletor de classe
+        //para seleção diga o nome da class e a posição
+        function exibirTexto1(){
+            var x = document.getElementsByClassName("text01")[1];
+            alert(x.innerHTML);
+        }
+        //assim como nos outros mude apenas o [], podendo ser 0, 1, 2...onde 0 é texto 1, 1 é texto 2, 2 é texto 3 paragrafo...
+
+
+
+        //seletor de id
+
+        function exibirInput(){
+            var y = document.getElementById("0001");
+            alert(y.value);//todo input a gnt na saida usa o .value, o .value tira o valor do input... se fosse uma tag de texto como h1 ou h2 usamos nessa parte .innerHTML
+            y.value = "";
+        }
+        // o .value posso tanto obter a informação como atribuir  informação por exemplo no y.value = ""
+
+
+
+        //como manipular css com JS
+
+
 
 
 
@@ -330,13 +368,21 @@
 <body onload="mensagem3()">
 
 
+
+
     <h1 onclick="mensagem()">ola mundo</h1>
+
+
+
 
     <nav>
         <button onclick="mensagem1()">botão Clique</button>
         <br><br><br>    
 
     </nav>
+
+
+
 
     <select onchange="mensagem2()" id="cursos3">
         <option>Escolha seu Curso</option>
@@ -346,10 +392,38 @@
     </select>
 
 
+
+
+
+
     <input type="text" id="campo1" onkeyup="exibir()"><br><br>
 
     <input type="text" id="campo3" onkeydown="exibir1()"><br><br>
 
     <input type="text" id="campo4" onkeypress="exibir2()"><br><br>
+
+
+
+
+    <!--seletor html-->
+    <h2>Dhoy</h2> <br>
+    <h2>Rodrigues</h2> <br>
+    <h2>Alves</h2> <br>
+    <button onclick="acao()">Selecionar um sobrenome</button>
+
+
+
+    <!--Seletor classe-->
+    <h2 class="text01">texto em H2</h2>
+    <h1 class="text01">texto em h1</h1>
+    <p class="text01">paragrafo</p>
+    <button onclick="exibirTexto1()">Clique para selecionar entre os texto</button><br><br><br><br><br><br><br>
+
+
+
+    <!--seletor de id-->
+    <input type="text" id="0001">
+    <button onclick="exibirInput()">Clique aqui para o input</button><br><br><br><br><br>
+
 </body>
 </html>
