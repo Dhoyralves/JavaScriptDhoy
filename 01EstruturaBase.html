@@ -204,14 +204,43 @@
         //extrair elementos
 
         var termo1 = "Aprendendo JavaScript";
-
+        /*
         alert(termo1.slice(10,15)); //o J começa na posição 10 pois a primeira posição é 0 e termina no S ficando apenas Java 
         alert(termo1.slice(10)); // pega todo conteudo depois da posição 10
+        */
 
 
 
+        //trabalhando com a biblioteca Math = matematica = calculadora
+
+        var nota2 = 7.79;
+
+        alert(Math.round(nota2)); // para arredondar um valor
+
+        alert(Math.min(-10, 5, 9, -65, 0, 78)); //o menor numero de todos -65
+
+        alert(Math.max(6, 8, 79, -56, 0, 45)); // o maior numero de todos 79
+
+        alert(Math.random()); // cria numeros aleatorios entre 0 e 1
+
+        alert(Math.random() * 10); // cria numeros aleatorios entre 1 e 10
+        
+        alert(Math.random() * 100); // cria numeros aleatorios entre 10 e 100
 
 
+        //gerando um numero qualquer e deixando ele inteiro
+
+        var numero3 = Math.random() * 100; //gera o numero aleatorio entre 10 e 100
+        alert(Math.round(numero3)); //arredonda o numero da variavel que foi gerada
+
+
+
+        //criando minha propria função
+
+        function somar (number1, number2){ //função que quer dois parametros
+            return number1 + number2; // retorna a noma dos parametros
+        }
+        alert(somar(5,5)); // não esquecer de colocar os parametros que a função pede
 
 
 
