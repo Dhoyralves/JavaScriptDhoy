@@ -6,28 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estrutura Base J-Query</title>
 
-    <!--normalmente temos que colocar um arquivo baixado jqery aqui
-    <script src="arquivo aqui"></script> pra funcionar em outras IDE-->
+    <!--normalmente temos que colocar um arquivo baixado jqery aqui-->
+    <script src="./jquery-3.6.4.min.js"></script> 
 
     <script>
 
         //ao carregar o documento, para funcionar quando o documento estiver carregado
-        /*
+        
         $(document).ready(function(){
             //aqui dentro colocamos as funções, laços, condicionais e tudo que quisermos fazer
-
-
-        });
-        */
-
         var inputValue = $("input").val();
-        var capturaId = $("#titulo").html
-        var capturaClass = $(".subtitulo").html
+        var capturaId = $("#titulo").html;
+        var capturaClass = $(".subtitulo").html;
 
         alert(inputValue);
         alert(capturaId);
         alert(capturaClass);
 
+
+        });       
+
+       
 
 
 
@@ -40,9 +39,11 @@
 
 
 <body>
-    
+    <h2>
+
+    </h2>
     <header>
-    <!--<input type="text" value="Dhoy">-->
+    <input type="text" value="Dhoy">deded    
     <h1 id="titulo">Titulo em h1</h1>
     <h2 class="subtitulo">Titulo em h2</h2>
 
