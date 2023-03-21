@@ -353,12 +353,27 @@
 
 
 
-        //como manipular css com JS
+        //como manipular CSS com JS
+        function estilizar () {
+            //obter o elemento/tag h1
+            var obterh1 = document.getElementsByTagName("h1")[2];
+            //css
+            obterh1.style.color = "red";
+            obterh1.style.fontSize = "2rem";
+            //alterando o conteudo
+            obterh1.innerHTML = "Curso de JS";
+        }
 
 
 
-
-
+        //trabalhando com atributos
+        //posso mudar a class da tag ou src de uma imagem
+        function alterarlink (){
+            //obter link
+            var alt1 = document.getElementsByTagName("a")[0];
+            //alterar link
+            alt1.href = "https://www.facebook.com";
+        }
 
 
 
@@ -424,6 +439,17 @@
     <!--seletor de id-->
     <input type="text" id="0001">
     <button onclick="exibirInput()">Clique aqui para o input</button><br><br><br><br><br>
+
+
+    <!--Estilizar o nome JavaScript-->
+    <h1>JavaScript</h1>
+    <button onclick="estilizar()">Clique para mudar</button><br><br><br>
+
+
+    <!--mudando atributos-->
+    <a href="https://www.google.com">Link do site</a><br>
+    <button onclick="alterarlink()">mudar Link</button><br><br><br>
+
 
 </body>
 </html>
